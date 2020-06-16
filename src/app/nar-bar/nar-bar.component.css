@@ -1,0 +1,19 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aquamarine;
+    color: grey;
+    font-size: 20px;
+    padding: 20px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-right: 25px;
+    cursor: pointer;
+}

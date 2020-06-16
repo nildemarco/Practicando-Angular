@@ -1,0 +1,17 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-post {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: antiquewhite;
+    margin: 5px;
+}
+
+.card-post h3 {
+    margin: 5px 0px;
+}
