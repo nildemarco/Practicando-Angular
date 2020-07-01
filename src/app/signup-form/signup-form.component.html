@@ -1,0 +1,23 @@
+<section>
+    <h2>Formulario de usuario</h2>
+
+    <form [formGroup]="dataForm" (ngSubmit)="onSubmit()">
+        Nombre: <input type=" text" placeholder="Nombre" formControlName="name" />
+        Telefono: <input type="number" formControlName="phone" />
+        Email: <input type="email" placeholder="Email" formControlName="email" />
+        <div class="invalid-data" *ngIf="email.invalid && email.touched">
+            <div *ngIf="email.errors?.required">
+                El campo del mail no puede estar vacio
+            </div>
+
+            <div *ngIf="email.errors?.pattern">
+                Por favor ingrese un email correcto
+            </div>
+        </div>
+        <button type="submit" class="submit">Enviar</button>
+    </form>
+    <div>
+        <p>Form value: {{dataForm.value | json}}</p>
+        <p>Form status {{ dataForm.status | json}} </p>
+    </div>
+</section>
